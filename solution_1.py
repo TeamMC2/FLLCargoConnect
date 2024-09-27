@@ -1,5 +1,19 @@
 # This file contains the instructions for solution 1
+def mission_one():
+    straight_speed = 900
+    robot.reset()
+    robot.straight(150)
+    
+    pid_line_follow_dist(
+        sensor_to_track = "right", 
+        side_of_line = "right",
+        drive_speed = 150, 
+        critical_gain = 1, 
+        critical_period = 10, 
+        stop_distance = 620)
 
+    
+    
 def solution_1():
   # Do awesome stuff!
   line_follow_until_color(
